@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+<head>
+	<title>Dashboard</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+	<!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<style>
+		/* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+		/* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+		
+		@-ms-viewport {
+			width: 100vw;
+			zoom: 100%;
+		}
+		
+		@viewport {
+			width: 100vw;
+			zoom: 100%;
+		}
+		
+		@-ms-viewport {
+			user-zoom: fixed;
+		}
+		
+		@viewport {
+			user-zoom: fixed;
+		}
+
+	</style>
+
+
+	<link type="text/css" rel="stylesheet" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--<link type="text/css" rel="stylesheet" href="../css/preloader.css">-->
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+	<link type="text/css" rel="stylesheet" href="css/crop.css">
+
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+
+
+
+
+	<script src="cordova.js"></script>
+	<!-- phantom library, needed for Cordova api calls, added during build -->
+	<script src="js/app.js"></script>
+	<!-- recommended location of your JavaScript code relative to other JS files -->
+	<script src="xdk/init-dev.js"></script>
+	<!-- normalizes device and document ready events, see README for details -->
+
+
+</head>
+
+<body>
+
+
+	<!-- ----------------------------NAVBAR----------------------------------- -->
+
+	<nav class="fixed">
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo">Dashboard</a>
+			<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li class="waves-effect"><a href="#">Home</a></li>
+				<li class="waves-effect"><a href="pages/settings.html">Settings</a></li>
+				<li class="waves-effect"><a href="pages/share.html">Share</a></li>
+				<li class="waves-effect"><a href="pages/about.html">About</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-menu">
+				<li class="side-nav-header full-width green lighten-2"><a href="#">#TODO:Header</a></li>
+				<li class="waves-effect full-width"><a href="#">Home</a></li>
+				<li class="waves-effect full-width"><a href="pages/settings.html">Settings</a></li>
+				<li class="waves-effect full-width"><a href="pages/share.html">Share</a></li>
+				<li class="waves-effect full-width"><a href="pages/about.html">About</a></li>
+				<li class="waves-effect full-width"><a href="#" onclick="windowClose();return false">Exit</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- ------------------- NAVBAR -------------------------------------------- -->
+
+
+
+
+
+
+
+
+	<!-- -------------------- CONTENT ------------------------------------------- -->
+
+
+	<div class="container">
+
+		<a href="index.html">
+			<div class="card card-with-padding">
+				<div class="card-image">
+					<img src="images/crops.png">
+				</div>
+				<div class="card-content">
+					All your crops, organised.
+				</div>
+				<div class="card-action">
+					<a href="index.html">My Crops</a>
+				</div>
+			</div>
+		</a>
+
+		<a href="pages/crops.html">
+			<div class="card card-with-padding">
+				<div class="card-image">
+					<img src="images/suggest.png">
+				</div>
+				<div class="card-content">
+					Try something new.
+				</div>
+				<div class="card-action">
+					<a href="pages/crops.html">Crop Suggestions</a>
+				</div>
+			</div>
+		</a>
+
+		<a href="pages/map.html">
+			<div class="card card-with-padding">
+				<div class="card-image">
+					<img src="images/map.png">
+				</div>
+				<div class="card-content">
+					Geographical analysis?
+				</div>
+				<div class="card-action">
+					<a href="pages/map.html">Open map</a>
+				</div>
+			</div>
+		</a>
+
+
+
+
+
+
+		<!-- -------------------- CONTENT ------------------------------------------- -->
+
+
+
+
+
+
+		<!-- ---------------------------Data SCRIPTS----------------------------------- -->
+
+
+		<script type="text/javascript" src="js/data/expenses.js"></script>
+
+
+
+
+
+
+		<!-- ---------------------------SCRIPTS----------------------------------- -->
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/crop.js"></script>
+		<!--<script type="text/javascript" src="../js/preloader.js"></script>-->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
