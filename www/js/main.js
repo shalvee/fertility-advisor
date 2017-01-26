@@ -14,7 +14,7 @@ $(document).ready(function () {
 	$(".button-collapse").sideNav();
 	$("ul.tabs").tabs();
 	$("select").material_select();
-	$('.modal').modal();
+	//$('.modal').modal();
 	$(".btn").addClass("waves-effect");
 	$('.datepicker').pickadate({
 		selectMonths: true, // Creates a dropdown to control month
