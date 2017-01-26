@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+<head>
+	<title>Dashboard</title>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+	<!-- see http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	<style>
+		/* following two viewport lines are equivalent to the meta viewport statement above, needed for Windows */
+		/* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html and http://dev.w3.org/csswg/css-device-adapt/ */
+		
+		@-ms-viewport {
+			width: 100vw;
+			zoom: 100%;
+		}
+		
+		@viewport {
+			width: 100vw;
+			zoom: 100%;
+		}
+		
+		@-ms-viewport {
+			user-zoom: fixed;
+		}
+		
+		@viewport {
+			user-zoom: fixed;
+		}
+
+	</style>
+
+
+	<link type="text/css" rel="stylesheet" href="css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!--<link type="text/css" rel="stylesheet" href="../css/preloader.css">-->
+	<link type="text/css" rel="stylesheet" href="css/main.css">
+	<link type="text/css" rel="stylesheet" href="css/crop.css">
+
+	<script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/materialize.js"></script>
+
+
+
+
+	<script src="cordova.js"></script>
+	<!-- phantom library, needed for Cordova api calls, added during build -->
+	<script src="js/app.js"></script>
+	<!-- recommended location of your JavaScript code relative to other JS files -->
+	<script src="xdk/init-dev.js"></script>
+	<!-- normalizes device and document ready events, see README for details -->
+
+
+</head>
+
+<body>
+
+
+	<!-- ----------------------------NAVBAR----------------------------------- -->
+
+	<nav class="fixed">
+		<div class="nav-wrapper">
+			<a href="#!" class="brand-logo">Dashboard</a>
+			<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+			<ul class="right hide-on-med-and-down">
+				<li class="waves-effect"><a href="#">Home</a></li>
+				<li class="waves-effect"><a href="pages/settings.html">Settings</a></li>
+				<li class="waves-effect"><a href="pages/share.html">Share</a></li>
+				<li class="waves-effect"><a href="pages/about.html">About</a></li>
+			</ul>
+			<ul class="side-nav" id="mobile-menu">
+				<li class="side-nav-header full-width green lighten-2"><a href="#">#TODO:Header</a></li>
+				<li class="waves-effect full-width"><a href="#">Home</a></li>
+				<li class="waves-effect full-width"><a href="pages/settings.html">Settings</a></li>
+				<li class="waves-effect full-width"><a href="pages/share.html">Share</a></li>
+				<li class="waves-effect full-width"><a href="pages/about.html">About</a></li>
+				<li class="waves-effect full-width"><a href="#" onclick="windowClose();return false">Exit</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!-- ------------------- NAVBAR -------------------------------------------- -->
+
+
+
+
+
+
+
+
+	<!-- -------------------- CONTENT ------------------------------------------- -->
+
+
+	<div class="container">
+
+		<div class="card card-with-padding full-width row">
+
+
+			<a class="col s1 black-text btn white btn-flat waves-effect" href="home.html"><i class="material-icons large">keyboard_arrow_left</i></a>
+			<div class="col s10 center-align">
+				<h3>Crop Name</h3>
+			</div>
+			
+
+
+			<div class="col s6 strong">Planted on</div>
+			<div class="col s6 strong">Land area</div>
+
+			<div class="col s6">12/12/12</div>
+			<div class="col s6">3.4 acres</div>
+
+			<div class="col s12 white-text">This is blank space.</div>
+
+			<div class="col s6 strong">Expected harvest date</div>
+			<div class="col s6 strong">Expected Harvest quantity</div>
+
+			<div class="col s6">12/12/12</div>
+			<div class="col s6">45 tons</div>
+
+		</div>
+
+		<div class="card card-with-padding full-width row">
+
+			<div class="col s6 strong">Next water</div>
+			<div class="col s6 red-text">1/2/13</div>
+
+			<div class="col s6 strong grey-text">Last Watered</div>
+			<div class="col s6 grey-text">12/12/12</div>
+
+
+			<div class="col s12 white-text">This is blank space.</div>
+
+			<div class="btn blue white-text col s6 offset-s3 waves-effect waves-green">Water Record</div>
+
+
+		</div>
+
+
+		<div class="card card-with-padding full-width row">
+
+			<div class="col s12">
+				<h5 class="center">Fertilizer record</h5></div>
+
+			<div class="col s6 strong">Fertilser</div>
+			<div class="col s6 strong">Added on</div>
+
+			<div class="col s6">NPK</div>
+			<div class="col s6">1/2/13</div>
+
+			<div class="col s6">urea</div>
+			<div class="col s6">1/2/13</div>
+
+			<div class="col s12 white-text">This is blank space.</div>
+
+<<<<<<< HEAD
+			<div class="btn blue white-text col s4 waves-effect waves-red">Add fertilizer</div>
+			<div class="btn orange white-text col s4 waves-effect waves-red">Suggestions</div>
+			<div class="btn green white-text col s4 waves-effect waves-purple">Get Fertilizer</div>
+=======
+			<div class="btn orange white-text col s6 waves-effect waves-red">Suggestions</div>
+			<div class="btn green white-text col s6 waves-effect waves-purple">Get Fertilizer</div>
+>>>>>>> bbff4b05c3c954fa1b544d41c5f1876be47c2fc2
+
+
+		</div>
+
+		<div class="card card-with-padding full-width row">
+
+
+			<div class="col s12">
+				<h5 class="center">Activity record</h5></div>
+
+			<div class="col s6 strong">Activity</div>
+			<div class="col s6 strong">Date</div>
+
+			<div class="col s6">Latest</div>
+			<div class="col s6">1/2/13</div>
+
+			<div class="col s6">old</div>
+			<div class="col s6">1/2/13</div>
+
+			<div class="col s6">older</div>
+			<div class="col s6">1/2/13</div>
+
+			<div class="col s6">oldest</div>
+			<div class="col s6">1/2/13</div>
+
+			<div class="col s12 white-text">This is blank space.</div>
+
+			<div class="btn red white-text col s6 offset-s3 waves-effect waves-orange">Upcoming</div>
+
+
+
+		</div>
+
+		<div class="card card-with-padding full-width">
+
+			<div id="expense-record-container" class="full-width row">
+				<div class="col s12">
+					<h5 class="center">Expense record</h5>
+				</div>
+
+				<div class="col s3 strong">Activity</div>
+				<div class="col s3 strong">Date</div>
+				<div class="col s3 strong center">In</div>
+				<div class="col s3 strong center">Out</div>
+
+
+			</div>
+			<div class="row full-width">
+				<div class="col s3"><input type="text" id="expense-input-description" name="expense-input-description" /></div>
+				<div class="col s3"><input type="date" id="expense-input-date" name="expense-input-date" class="date-picker"/></div>
+				<div class="col s3 right-align"><input type="number" id="expense-input-amt_in" value="0.00" /></div>
+				<div class="col s3 right-align"><input type="number" id="expense-input-amt_out" value="0.00" /></div>
+
+				<div class="btn teal white-text right" id="add-expense-btn">Add</div>
+			</div>
+
+
+			<!-- <div class="col s6 center strong">Total</div>
+			<div class="col s3 right-align green-text strong">300.00</div>
+			<div class="col s3 right-align red-text strong">250.00</div>
+
+			<a class="btn blue wite-text " href="#expense-input-modal">Add Expense</a>
+			<div class="btn teal white-text " onclick="$('#expense-input-modal').modal('open')">Add</div> -->
+
+
+
+
+
+
+		</div>
+
+
+		
+		
+		
+		
+		
+		
+		
+		<!-- -------------------- CONTENT ------------------------------------------- -->
+
+
+
+
+
+
+		<!-- ---------------------------Data SCRIPTS----------------------------------- -->
+
+
+		<script type="text/javascript" src="js/data/expenses.js"></script>
+
+
+
+
+
+
+		<!-- ---------------------------SCRIPTS----------------------------------- -->
+
+		<script type="text/javascript" src="js/main.js"></script>
+		<script type="text/javascript" src="js/crop.js"></script>
+		<!--<script type="text/javascript" src="../js/preloader.js"></script>-->
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
