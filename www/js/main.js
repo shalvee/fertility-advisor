@@ -17,7 +17,7 @@ $(document).ready(function () {
 	//$('.modal').modal();
 	$(".btn").addClass("waves-effect");
 	$('.datepicker').pickadate({
-        format: 'mmmm d, yyyy',
+        	format: 'mmmm d, yyyy',
 		selectMonths: true, // Creates a dropdown to control month
 		selectYears: 15 // Creates a dropdown of 15 years to control year
 	});
