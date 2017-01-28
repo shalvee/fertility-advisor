@@ -72,7 +72,7 @@
 	<!-- -------------------- CONTENT ------------------------------------------- -->
 	<div class="container">
 		<div class="card card-with-padding full-width row">
-			<a class="col s1 black-text btn white btn-flat waves-effect" href="home.html"><i class="material-icons large">keyboard_arrow_left</i></a>
+			<a class="col s1 black-text btn white btn-flat waves-effect" href="home.html"><i class="material-icons large">arrow_left</i></a>
 			<div class="col s10 center-align" id="crop-head">
 				<div class="input-field">
 					<select id="crop-input">
@@ -92,7 +92,7 @@
 			<div class="col s6 strong">Land area (Acres)</div>
 
 			<div class="col s6 input-field">
-				<input type="date" class="datepicker" id="crop-date" value="17 January, 2017">
+				<input type="date" class="datepicker" id="crop-date">
 				<label for="crop-date">Date</label>
 			</div>
 			<div class="col s6 input-field">
@@ -106,8 +106,8 @@
 			<div class="col s6 strong">Expected harvest date</div>
 			<div class="col s6 strong">Expected Harvest quantity</div>
 
-			<div class="col s6">12/12/12</div>
-			<div class="col s6">45 tons</div>
+			<div class="col s6" id="expected-harvest-date">12/12/12</div>
+			<div class="col s6" id="expected-harvest-quantity">45 tons</div>
 
 			<div class="col s12 white-text">This is blank space.</div>
 			</div>
