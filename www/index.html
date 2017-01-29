@@ -83,42 +83,40 @@
     				</select>
 				</div>
 				<a class="btn black white-text" id="select-crop-btn">Go!</a>
-				
 			</div>
 			<div id="harvest-info">
-			<div class="col s12 white-text">This is blank space.</div>
-
-			<div class="col s6 strong">Planted on</div>
-			<div class="col s6 strong">Land area (Acres)</div>
-
-			<div class="col s6 input-field">
-				<input type="date" class="datepicker" id="crop-date">
-				<label for="crop-date">Date</label>
-			</div>
-			<div class="col s6 input-field">
-				<input type="number" value="10" id="land-area">
-				<label for="land-area">Area</label>
-			</div>
-			<a class="btn black white-text col s2 offset-s5" id="select-crop-date-btn">Go!</a>
-
-			<div class="col s12 white-text">This is blank space.</div>
-
-			<div class="col s6 strong">Expected harvest date</div>
-			<div class="col s6 strong">Expected Harvest quantity</div>
-
-			<div class="col s6" id="expected-harvest-date">12/12/12</div>
-			<div class="col s6" id="expected-harvest-quantity">45 tons</div>
-
-			<div class="col s12 white-text">This is blank space.</div>
+				<div class="col s12 white-text">This is blank space.</div>
+				<div class="col s6 strong">Planted on</div>
+				<div class="col s6 strong">Land area (Acres)</div>
+				<div class="col s6 input-field">
+					<input type="date" class="datepicker" id="crop-date" name="crop-date">
+					<label for="crop-date">Date</label>
+				</div>
+				<div class="col s6 input-field">
+					<input type="number" value="10" id="land-area">
+					<label for="land-area">Area</label>
+				</div>
+				<a class="btn black white-text col s2 offset-s5" id="select-crop-date-btn">Go!</a>
+				<div class="col s12 white-text">This is blank space.</div>
+				<div class="col s6 strong">Expected harvest date</div>
+				<div class="col s6 strong">Expected Harvest quantity</div>
+				<div class="col s6" id="expected-harvest-date">Please enter date above.</div>
+				<div class="col s6" id="expected-harvest-quantity">something in kg :-P</div>
+				<div class="col s12 white-text">This is blank space.</div>
 			</div>
 		</div>
 		<div class="card card-with-padding full-width row">
-			<div class="col s6 strong">Next water</div>
-			<div class="col s6 red-text">1/2/13</div>
-			<div class="col s6 strong grey-text">Last Watered</div>
-			<div class="col s6 grey-text">12/12/12</div>
+			<div class="col s12">
+				<h5 class="center">Water record</h5>
+			</div>
+			<div class="col s12 strong center">Next water</div>
+			<div class="col s12 red-text center" id="next-water">Water now first!</div>
 			<div class="col s12 white-text">This is blank space.</div>
-			<div class="btn blue white-text col s6 offset-s3 waves-effect waves-green">Water Record</div>
+			<div class="col s12 center">Previous record</div>
+			<div id="water-record-container" class="center">
+			</div>
+			<div class="col s12 white-text">This is blank space.</div>
+			<div class="btn blue white-text col s6 offset-s3 waves-effect waves-green" id="add-water-btn">Water now</div>
 		</div>
 		<div class="card card-with-padding full-width row">
 			<div class="col s12">
@@ -126,29 +124,20 @@
 			</div>
 			<div class="col s6 strong">Fertilser</div>
 			<div class="col s6 strong">Added on</div>
-
-			<div class="col s6">NPK</div>
-			<div class="col s6">1/2/13</div>
-
-			<div class="col s6">urea</div>
-			<div class="col s6">1/2/13</div>
-
+			<div id="fertilizer-record-container">
+			</div>
 			<div class="col s12 white-text">This is blank space.</div>
-
 			<div class="col s6 input-field">
 				<input type="text" id="fertilizer-name">
 				<label for="fertilizer-name">Name</label>
 			</div>
-			
 			<div class="col s6 input-field">
-				<input type="date" class="datepicker" id="fertilizer-date" value="17 January, 2017">
+				<input type="date" class="datepicker" id="fertilizer-date">
 				<label for="fertilizer-date">Date</label>
 			</div>
-			
-			
-			<div class="btn blue white-text col s4 waves-effect btn-flat waves-red">Add fertilizer</div>
-			<div class="btn orange white-text col s4 waves-effect btn-flat waves-red">Suggestions</div>
-			<div class="btn green white-text col s4 waves-effect btn-flat waves-purple">Get Fertilizer</div>
+			<div class="btn blue white-text col s4 waves-effect btn-flat waves-red" id="add-fertilizer-btn">Add fertilizer</div>
+			<div class="btn orange white-text col s4 waves-effect btn-flat waves-red" onclick="Materialize.toast('Suggestions coming soon!', 4000)">Suggestions</div>
+			<div class="btn green white-text col s4 waves-effect btn-flat waves-purple" onclick="Materialize.toast('Store opening shortly!', 4000)">Get Fertilizer</div>
 		</div>
 		<div class="card card-with-padding full-width row">
 			<div class="col s12">
@@ -156,16 +145,22 @@
 			</div>
 			<div class="col s6 strong">Activity</div>
 			<div class="col s6 strong">Date</div>
-			<div class="col s6">Latest</div>
-			<div class="col s6">1/2/13</div>
-			<div class="col s6">old</div>
-			<div class="col s6">1/2/13</div>
-			<div class="col s6">older</div>
-			<div class="col s6">1/2/13</div>
-			<div class="col s6">oldest</div>
-			<div class="col s6">1/2/13</div>
+			
+			<div id="activity-record-container">
+			</div>
 			<div class="col s12 white-text">This is blank space.</div>
-			<div class="btn red white-text col s6 offset-s3 waves-effect waves-orange">Upcoming</div>
+			<div class="col s6 input-field">
+				<input type="text" id="activity-name">
+				<label for="activity-name">Name</label>
+			</div>
+			<div class="col s6 input-field">
+				<input type="date" class="datepicker" id="activity-date">
+				<label for="activity-date">Date</label>
+			</div>
+			
+			<div class="btn green white-text col s6 waves-effect waves-orange" id="add-activity-btn">Add activity</div>
+			<div class="btn red white-text col s6 waves-effect waves-orange" id="upcoming-activity-btn" onclick="Materialize.toast('This feature is under development!', 4000)">Upcoming</div>
+		
 		</div>
 		<div class="card card-with-padding full-width">
 			<div id="expense-record-container" class="full-width row">
@@ -178,10 +173,22 @@
 				<div class="col s3 strong center">Out</div>
 			</div>
 			<div class="row full-width">
-				<div class="col s3"><input type="text" id="expense-input-description" name="expense-input-description" /></div>
-				<div class="col s3"><input type="date" id="expense-input-date" name="expense-input-date" class="datepicker" /></div>
-				<div class="col s3 right-align"><input type="number" id="expense-input-amt_in" value="0.00" /></div>
-				<div class="col s3 right-align"><input type="number" id="expense-input-amt_out" value="0.00" /></div>
+				<div class="col s3 input-field">
+					<input type="text" id="expense-input-description" name="expense-input-description" />
+					<label for="expense-input-description">Description</label>
+				</div>
+				<div class="col s3 input-field">
+					<input type="date" id="expense-input-date" name="expense-input-date" class="datepicker" />
+					<label for="expense-input-date">Select date</label>
+				</div>
+				<div class="col s3 input-field right-align">
+					<input type="number" id="expense-input-amt_in" value="0" />
+					<label for="expense-input-amt_in">Amount</label>
+				</div>
+				<div class="col s3 input-field right-align">
+					<input type="number" id="expense-input-amt_out" value="0" />
+					<label for="expense-input-amt_out">Amount</label>
+				</div>
 				<div class="btn teal white-text right" id="add-expense-btn">Add</div>
 			</div>
 			<!-- <div class="col s6 center strong">Total</div>
