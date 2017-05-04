@@ -1,8 +1,8 @@
-# Fertility Adivisor
+# Fertility Advisor
 
 > _Your friendly farm manaager_
 
-Feritility Advisor is a cross platform HTML5 application designed to be used as a front-end for a suite of electronic farm automation devices.
+Fertility Advisor is a cross platform HTML5 application designed to be used as a front-end for a suite of electronic farm automation devices.
 
 This app has won **Best Innovation Award 2016** at G. H. Raisoni College of Engineering, Nagpur.
 
