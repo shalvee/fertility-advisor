@@ -1,6 +1,6 @@
 # Fertility Advisor
 
-> _Your friendly farm manaager_
+> _Your friendly farm manager_
 
 Fertility Advisor is a cross platform HTML5 application designed to be used as a front-end for a suite of electronic farm automation devices.
 
